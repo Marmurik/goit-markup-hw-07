@@ -1,0 +1,44 @@
+.about-our-activity {
+    padding-bottom: 94px;
+  }
+  
+  .about-our-activity-title {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  
+  .activity-list {
+    display: flex;
+    column-gap: 30px;
+    flex-direction: row;
+  }
+  
+  .activity-text {
+    display: flex;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.17;
+    color: var(--color-one--);
+    background-color: rgba(47, 48, 58, 0.8);
+    height: 70px;
+    width: 100%;
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 27px; 
+    justify-content: center;
+  
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .activity-item {
+    width: calc((100% - 60px) / 3);
+    position: relative;
+  }
