@@ -31,10 +31,6 @@ ul {
   margin: 0;
 }
 
-.logo-link {
-  text-decoration: none;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -53,71 +49,71 @@ img {
   padding-right: 15px;
 }
 
-.page-header {
+.header-page {
   height: 80px;
   border-bottom: 1px solid #ececec;
   padding-top: 24px;
   padding-bottom: 24px;
 }
 
-.header-text {
+.menu__text {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.footer-logo-design,
-.web-customazation {
+.logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
+}
+
+.footer-logo,
+.web-logo {
   color: var(--color-one--);
 }
 
-.header-logo-design {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+.header-logo {
   color: var(--color-three--);
   margin-right: 93px;
   align-items: center;
 }
 
-.header-list {
+.menu-list {
   display: flex;
   align-items: center;
 }
 
-.header-item:not(:last-child) {
+.menu-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.page-header .container {
+.header-page .container {
   display: flex;
   align-items: center;
 }
 
 .portfolio-contact-info,
-.header-contact-info {
+.header-contacts__list {
   margin-left: auto;
 }
 
-.page-header .portfolio-contact-info {
+.header-page .portfolio-contact-info {
   display: flex;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
 
-.page-header .header-contact-info {
+.header-page .header-contacts__list {
   display: flex;
   -moz-column-gap: 50px;
        column-gap: 50px;
 }
 
-.contact-icon {
+.header-contacts__item {
   display: flex;
   background-color: transparent;
   align-items: center;
@@ -125,18 +121,18 @@ img {
   fill: var(--color-four--);
 }
 
-.icon-image-nav {
+.header-contacts__icon {
   margin-right: 10px;
 }
 
-.contact-icon:hover,
-.contact-icon:focus {
+.header-contacts__item:hover,
+.header-contacts__item:focus {
   background-color: var(--color-one--);
   fill: var(--color-two--);
 }
 
-.mail-design,
-.tel-design {
+.header-contacts__mail-design,
+.header-contacts__tel-design {
   display: flex;
   align-items: center;
 }
@@ -147,7 +143,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link {
+.menu-list__link {
   color: var(--color-three--);
   display: block;
   text-decoration: none;
@@ -155,7 +151,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link.current-link::after {
+.menu-list__link.current-link::after {
   content: "";
   display: block;
   width: 100%;
@@ -167,9 +163,9 @@ img {
   bottom: -33px;
 }
 
-.nav-link:hover,
-.nav-link:focus,
-.web-customazation,
+.menu-list__link:hover,
+.menu-list__link:focus,
+.web-logo,
 .link-design:hover,
 .link-design:focus,
 .mail-design:hover,

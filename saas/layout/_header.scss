@@ -5,63 +5,63 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .page-header {
+  .header-page {
     height: 80px;
     border-bottom: 1px solid #ececec;
     padding-top: 24px;
     padding-bottom: 24px;
   }
   
-  .header-text {
+  .menu__text {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
   }
-  .footer-logo-design,
-  .web-customazation {
+
+  .logo {
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    text-decoration: none;
+  }
+  .footer-logo,
+  .web-logo {
     color: var(--color-one--);
   }
   
-  .header-logo-design {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+  .header-logo {
     color: var(--color-three--);
     margin-right: 93px;
     align-items: center;
   }
-  .header-list {
+  .menu-list {
     display: flex;
     align-items: center;
   }
   
-  .header-item:not(:last-child) {
+  .menu-list__item:not(:last-child) {
     margin-right: 50px;
   }
-  .page-header .container {
+  .header-page .container {
     display: flex;
     align-items: center;
   }
   
   .portfolio-contact-info,
-  .header-contact-info {
+  .header-contacts__list {
     margin-left: auto;
   }
-  .page-header .portfolio-contact-info {
+  .header-page .portfolio-contact-info {
     display: flex;
     column-gap: 30px;
   }
-  .page-header .header-contact-info {
+  .header-page .header-contacts__list {
     display: flex;
     column-gap: 50px;
   }
-  .contact-icon {
+  .header-contacts__item {
     display: flex;
     background-color:transparent;
     align-items: center;
@@ -70,18 +70,18 @@
   
   }
   
-  .icon-image-nav{
+  .header-contacts__icon{
     margin-right: 10px;
   }
   
-  .contact-icon:hover, 
-  .contact-icon:focus {
+  .header-contacts__item:hover, 
+  .header-contacts__item:focus {
     background-color: var(--color-one--);
     fill: var(--color-two--);
   }
   
-  .mail-design,
-  .tel-design {
+  .header-contacts__mail-design,
+  .header-contacts__tel-design {
     display: flex;
     align-items: center;
   }

@@ -3,16 +3,16 @@
     text-decoration: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .nav-link {
+  .menu-list__link {
    color: var(--color-three--);
    display: block;
-    text-decoration: none;
-    position: relative; 
+   text-decoration: none;
+   position: relative; 
   
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .nav-link.current-link::after {
+  .menu-list__link.current-link::after {
     content: '';
     display: block;
     width: 100%;
@@ -24,9 +24,9 @@
     bottom: -33px;
   }
   
-  .nav-link:hover,
-  .nav-link:focus,
-  .web-customazation,
+  .menu-list__link:hover,
+  .menu-list__link:focus,
+  .web-logo,
   .link-design:hover,
   .link-design:focus,
   .mail-design:hover,
