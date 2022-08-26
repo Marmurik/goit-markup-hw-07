@@ -36,12 +36,12 @@
     margin-right: 93px;
     align-items: center;
   }
-  .menu-list {
+  .menu__list {
     display: flex;
     align-items: center;
   }
   
-  .menu-list__item:not(:last-child) {
+  .menu__item:not(:last-child) {
     margin-right: 50px;
   }
   .header-page .container {
@@ -70,9 +70,10 @@
   
   }
   
-  .header-contacts__icon{
+  .header-contacts__icon--right{
     margin-right: 10px;
   }
+
   
   .header-contacts__item:hover, 
   .header-contacts__item:focus {

@@ -1,23 +1,14 @@
-.about-our-activity {
+.activity {
     padding-bottom: 94px;
   }
   
-  .about-our-activity-title {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    margin-top: 0;
-    margin-bottom: 50px;
-  }
-  
-  .activity-list {
+  .activity__list {
     display: flex;
     column-gap: 30px;
     flex-direction: row;
   }
   
-  .activity-text {
+  .activity__text {
     display: flex;
     font-family: inherit;
     font-size: 14px;
@@ -38,7 +29,7 @@
     right: 0;
   }
   
-  .activity-item {
+  .activity__item {
     width: calc((100% - 60px) / 3);
     position: relative;
   }

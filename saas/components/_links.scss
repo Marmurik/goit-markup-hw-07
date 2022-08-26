@@ -3,7 +3,7 @@
     text-decoration: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .menu-list__link {
+  .menu__link {
    color: var(--color-three--);
    display: block;
    text-decoration: none;
@@ -12,7 +12,7 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .menu-list__link.current-link::after {
+  .menu__link.current-link::after {
     content: '';
     display: block;
     width: 100%;
@@ -24,8 +24,8 @@
     bottom: -33px;
   }
   
-  .menu-list__link:hover,
-  .menu-list__link:focus,
+  .menu__link:hover,
+  .menu__link:focus,
   .web-logo,
   .link-design:hover,
   .link-design:focus,
@@ -43,7 +43,4 @@
     display: block;
   }
   
-  .centered {
-    text-align: center;
-  }
   

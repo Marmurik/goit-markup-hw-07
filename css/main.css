@@ -82,12 +82,12 @@ img {
   align-items: center;
 }
 
-.menu-list {
+.menu__list {
   display: flex;
   align-items: center;
 }
 
-.menu-list__item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -121,7 +121,7 @@ img {
   fill: var(--color-four--);
 }
 
-.header-contacts__icon {
+.header-contacts__icon--right {
   margin-right: 10px;
 }
 
@@ -143,7 +143,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-list__link {
+.menu__link {
   color: var(--color-three--);
   display: block;
   text-decoration: none;
@@ -151,7 +151,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-list__link.current-link::after {
+.menu__link.current-link::after {
   content: "";
   display: block;
   width: 100%;
@@ -163,8 +163,8 @@ img {
   bottom: -33px;
 }
 
-.menu-list__link:hover,
-.menu-list__link:focus,
+.menu__link:hover,
+.menu__link:focus,
 .web-logo,
 .link-design:hover,
 .link-design:focus,
@@ -182,10 +182,6 @@ img {
 
 .section {
   display: block;
-}
-
-.centered {
-  text-align: center;
 }
 
 .heroe-section__title {
@@ -228,8 +224,11 @@ img {
   padding: 10px 25px;
   display: inline-block;
   text-align: center;
-  margin-top: 30px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.heroe-section__button--top {
+  margin-top: 30px;
 }
 
 .heroe-section__button:hover,
@@ -252,35 +251,51 @@ img {
   margin: -1px;
 }
 
-.our-activity {
+.properties {
   padding-top: 57px;
   padding-bottom: 94px;
 }
 
-h3.main-prop-title {
+.activity__title {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+.activity__title--position {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+h3.properties__title {
   margin-top: 0;
 }
 
-.main-prop-list {
+.properties__list {
   display: flex;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
 
-.main-prop-list .main-prop-item {
+.properties__list .properties__item {
   width: calc((100% - 90px) / 4);
   justify-content: center;
 }
 
-.main-prop-title {
+.properties__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+.properties__title--down-position {
   margin-bottom: 10px;
 }
 
-.main-prop-text {
+.properties__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -289,7 +304,7 @@ h3.main-prop-title {
   margin-top: 0;
 }
 
-.prop-icon {
+.properties__icon {
   margin-bottom: 30px;
   background-color: #F5F4FA;
   border-radius: 4px;
@@ -302,27 +317,18 @@ h3.main-prop-title {
   height: 120px;
 }
 
-.about-our-activity {
+.activity {
   padding-bottom: 94px;
 }
 
-.about-our-activity-title {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  margin-top: 0;
-  margin-bottom: 50px;
-}
-
-.activity-list {
+.activity__list {
   display: flex;
   -moz-column-gap: 30px;
        column-gap: 30px;
   flex-direction: row;
 }
 
-.activity-text {
+.activity__text {
   display: flex;
   font-family: inherit;
   font-size: 14px;
@@ -342,24 +348,37 @@ h3.main-prop-title {
   right: 0;
 }
 
-.activity-item {
+.activity__item {
   width: calc((100% - 60px) / 3);
   position: relative;
 }
 
-.our-team-section {
+.team-section {
   background-color: var(--color-five--);
   padding-bottom: 94px;
   padding-top: 94px;
 }
 
-.our-team-list {
+.team-section__title {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+.team-section__title--position {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.team__list {
   display: flex;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
 
-.our-team-item {
+.team__item {
   background-color: white;
   width: calc((100% - 90px) / 4);
   border-bottom-left-radius: 4px;
@@ -367,18 +386,18 @@ h3.main-prop-title {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-soc-list {
+.team-member__soc-list {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.team-soc-icon {
+.team-member__soc-icon {
   fill: #AFB1B8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-soc-link {
+.team-member__soc-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -389,72 +408,74 @@ h3.main-prop-title {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-soc-link:hover,
-.team-soc-link:focus {
+.team-member__soc-link:hover,
+.team-member__soc-link:focus {
   background-color: var(--color-two--);
 }
 
-.team-soc-link:hover .team-soc-icon,
-.team-soc-link:focus .team-soc-icon {
+.team-member__soc-link:hover .team-member__soc-icon,
+.team-member__soc-link:focus .team-member__soc-icon {
   fill: #ffffff;
 }
 
-.team-border {
+.team-member {
   padding-bottom: 30px;
   padding-top: 30px;
 }
 
-.our-team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  margin-top: 0;
-  margin-bottom: 50px;
-}
-
-.team-name {
+.team-member__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  margin-bottom: 10px;
   margin-top: 0;
   text-align: center;
 }
 
-.team-position {
+.team-member__name--bottom {
+  margin-bottom: 10px;
+}
+
+.team-member__position {
   font-size: 16px;
   line-height: 1.18;
   color: var(--color-four--);
   margin: 0;
   text-align: center;
+}
+
+.team-member__position--bottom {
   margin-bottom: 16px;
 }
 
-.clients-section {
+.our-clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.clients-title {
+.our-clients_title {
   font-family: inherit;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  margin-top: 0;
-  margin-bottom: 50px;
 }
 
-.our-clients-list {
+.our-clients_title--position {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.our-clients__list {
   display: flex;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
 
-.our-clients-item {
+.our-clients__item {
   width: 170px;
 }
 
-.our-clients-link {
+.our-clients__link {
   display: flex;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -466,8 +487,8 @@ h3.main-prop-title {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-clients-link:hover,
-.our-clients-link:focus {
+.our-clients__link:hover,
+.our-clients__link:focus {
   fill: var(--color-two--);
   border: 1px solid var(--color-two--);
 }
