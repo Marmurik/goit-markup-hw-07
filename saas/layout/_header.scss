@@ -14,8 +14,7 @@
   
   .menu__text {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    @extend %font;
     letter-spacing: 0.02em;
   }
 
@@ -37,8 +36,7 @@
     align-items: center;
   }
   .menu__list {
-    display: flex;
-    align-items: center;
+    @extend %flex;
   }
   
   .menu__item:not(:last-child) {
@@ -49,8 +47,7 @@
     column-gap: 30px;
 
     & .container {
-      display: flex;
-      align-items: center;
+      @extend %flex;
     }
   }
   
@@ -64,9 +61,8 @@
   }
   
   .header-contacts__item {
-    display: flex;
+    @extend %flex;
     background-color:transparent;
-    align-items: center;
     justify-items: center;
     fill:var(--color-four--);
 
@@ -83,6 +79,5 @@
   
   .header-contacts__mail-design,
   .header-contacts__tel-design {
-    display: flex;
-    align-items: center;
+    @extend %flex;
   }
