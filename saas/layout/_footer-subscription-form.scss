@@ -1,10 +1,11 @@
 .footer-subscr__form {
-    display: flex; 
-    width: 570px;
-  }
-  .footer-subscr__form--top{
-    margin-top: 20px;
-  }
+  display: flex; 
+  width: 570px;
+
+ &--top{
+  margin-top: 20px;
+ }
+}
 
   .footer-subscr__title {
     font-size: 14px;
@@ -26,24 +27,23 @@
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
-  }
 
-  .footer-subscr__text--right {
+   &--right {
     margin-right: 12px;
-  }
+   }
   
-  .footer-subscr__text:focus {
+   &:focus {
     border: 1px solid var(--color-two--);
     outline: transparent;
+   }
+   &::placeholder {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+  }
   }
   
   .footer-subscr__icon--left {
     margin-left: 10px;
-  }
-  
-  .footer-subscr__text::placeholder {
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.6);
   }
   
   .footer-subscr__btn {

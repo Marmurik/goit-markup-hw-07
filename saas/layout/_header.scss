@@ -44,41 +44,41 @@
   .menu__item:not(:last-child) {
     margin-right: 50px;
   }
-  .header-page .container {
-    display: flex;
-    align-items: center;
+
+  .header-page {
+    column-gap: 30px;
+
+    & .container {
+      display: flex;
+      align-items: center;
+    }
   }
   
-  .portfolio-contact-info,
   .header-contacts__list {
     margin-left: auto;
+
+    .header-page & {
+      display: flex;
+      column-gap: 50px;
+    }
   }
-  .header-page .portfolio-contact-info {
-    display: flex;
-    column-gap: 30px;
-  }
-  .header-page .header-contacts__list {
-    display: flex;
-    column-gap: 50px;
-  }
+  
   .header-contacts__item {
     display: flex;
     background-color:transparent;
     align-items: center;
     justify-items: center;
     fill:var(--color-four--);
-  
+
+    &:hover, 
+    &:focus {
+    background-color: var(--color-one--);
+    fill: var(--color-two--);
+  }
   }
   
   .header-contacts__icon--right{
     margin-right: 10px;
-  }
-
-  
-  .header-contacts__item:hover, 
-  .header-contacts__item:focus {
-    background-color: var(--color-one--);
-    fill: var(--color-two--);
   }
   
   .header-contacts__mail-design,

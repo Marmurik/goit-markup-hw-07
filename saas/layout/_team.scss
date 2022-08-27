@@ -2,20 +2,20 @@
   background-color: var(--color-five--);
   padding-bottom: 94px;
   padding-top: 94px;
+
+  &__title {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+  &__title--position{
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+  }
 }
 
-.team-section__title {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-}
-
-.team-section__title--position{
-  margin-top: 0;
-  margin-bottom: 50px;
-  text-align: center;
-}
 
 .team__list {
   display: flex;
@@ -30,16 +30,21 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-member__soc-list {
-display: flex;
-justify-content: center;
-gap: 10px;
+.team-member {
+  padding-bottom: 30px;
+  padding-top: 30px;
+
+  &__soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    }
+  &__soc-icon {
+      fill:#AFB1B8;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
-.team-member__soc-icon {
-  fill:#AFB1B8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .team-member__soc-link {
   width: 44px;
@@ -51,42 +56,35 @@ gap: 10px;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.team-member__soc-link:hover,
-.team-member__soc-link:focus {
+&:hover,
+&:focus {
   background-color: var(--color-two--);
 }
-.team-member__soc-link:hover .team-member__soc-icon, 
-.team-member__soc-link:focus .team-member__soc-icon {
+&:hover .team-member__soc-icon, 
+&:focus .team-member__soc-icon {
   fill: #ffffff;
 }
-
-.team-member {
-  padding-bottom: 30px;
-  padding-top: 30px;
 }
-
 .team-member__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  // margin-bottom: 10px;
   margin-top: 0;
   text-align: center;
+  
+  &--bottom {
+    margin-bottom: 10px;
+  }
 }
-
-.team-member__name--bottom {
-  margin-bottom: 10px;
-}
-
-.team-member__position {
-  font-size: 16px;
-  line-height: 1.18;
-  color: var(--color-four--);
-  margin: 0;
-  text-align: center;
-}
-.team-member__position--bottom {
-  margin-bottom: 16px;
+  .team-member__position {
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--color-four--);
+    margin: 0;
+    text-align: center;
+  
+  &--bottom {
+    margin-bottom: 16px;
+  }
 }
