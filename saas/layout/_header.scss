@@ -64,7 +64,7 @@
     @extend %flex;
     background-color:transparent;
     justify-items: center;
-    fill:var(--color-four--);
+    fill: currentColor;
 
     &:hover, 
     &:focus {
